@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Define parameters
 k0 = 10  # Base value for k
 dt = 0.01  # Time step
-time_end = 630  # End time for simulation
+time_end = 3000  # End time for simulation
 e = 0.005
 
 # Calculate the time series

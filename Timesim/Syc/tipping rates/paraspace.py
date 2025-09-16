@@ -7,7 +7,7 @@ from numba import njit
 # 定义参数
 k0 = 10  # k的基础值
 dt = 0.01  # 时间步长
-time_end = 350  # 仿真时间
+time_end = 500  # 仿真时间
 num_steps = int(time_end / dt)
 
 # 模型参数
@@ -61,9 +61,9 @@ def calculate_tipping_rate(params):
     return tipping_rate
 
 # 组合参数
-w_values = np.linspace(0.01, 1.10, 50)  # w的范围
-ampr_values = np.linspace(0.02, 0.05, 10)  # 更细的 r 振幅取值范围
-ampk_values = np.linspace(0.5, 2.0, 10)  # 更细的 k 振幅取值范围
+w_values = np.linspace(0.01, 1.10, 500)  # w的范围
+ampr_values = np.linspace(0.02, 0.05, 100)  # 更细的 r 振幅取值范围
+ampk_values = np.linspace(0.5, 2.0, 100)  # 更细的 k 振幅取值范围
 
 if __name__ == "__main__":
     # 创建参数组合
