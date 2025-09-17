@@ -61,7 +61,7 @@ def calculate_tipping_rate(params):
     return tipping_rate
 
 # 组合参数
-w_values = np.linspace(0.01, 1.10, 500)  # w的范围
+w_values = np.linspace(0.01, 1.10, 111)  # w的范围
 ampr_values = np.linspace(0.02, 0.05, 100)  # 更细的 r 振幅取值范围
 ampk_values = np.linspace(0.5, 2.0, 100)  # 更细的 k 振幅取值范围
 
